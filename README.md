@@ -15,4 +15,10 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 需求
+
+- 显示商品的文字描述、图片描述、类型、价格信息；
+- 改变商品颜色的时候图片切换；
+- 改变商品类型的时候价格变化；
+- 加入/移除购物车；
+- 购物车中商品数量统计以及总价的统计；
