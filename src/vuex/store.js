@@ -12,3 +12,5 @@ export default new Vuex.Store({
     index
   }
 })
+// export const getState = state => state.iPhone6S;
+

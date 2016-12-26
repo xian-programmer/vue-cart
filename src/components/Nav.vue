@@ -1,6 +1,16 @@
 <script>
 	export default{
-		name: 'nav'
+		name: 'nav',
+		vuex: {
+	      getters: {
+	        cart: ({ index }) => index.cart
+	      }
+	    },
+	    computed: {
+	      'totalItem': function() {
+	        return this.cart.length
+	      }
+	    }
 	}
 </script>
 <template>

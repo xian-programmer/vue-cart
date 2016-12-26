@@ -1,5 +1,7 @@
 <script>
-	import { changePrice, changeStyle, addItem } from '../vuex/actions'
+	import { changePrice, changeStyle, addItem } from '../vuex/actions';
+	import { getVal } from '../vuex/getters.js';
+
 	export default{
 		name:'Index',
 		data(){
@@ -10,16 +12,21 @@
 		},
 		vuex: {
 	      getters: {
-	        // iPhone6S: ({ index }) => index.iPhone6S
-	        iPhone6S:(state,getters) => {
-	        	console.log(111);
-	        }
+
+	        iPhone6S: ({ index }) => index.iPhone6S
 	      },
 	      actions: {
 	        changePrice,
 	        changeStyle,
 	        addItem
 	      }
+	    },
+	    computed:{
+	    	'test':function(){
+	    		// debugger
+	    		// console.log("test function value is ",iphone);
+	    		// return this.iphone;
+	    	}
 	    }
 	}
 </script>
@@ -33,7 +40,9 @@
 					</div>
 					<div class="detail col-md-6 col-sm-6">
 						<h3 class="name">
+							{{test}}
 							<!-- <span v-text="iPhone6S"></span> -->
+							
 						</h3>
 						<hr>
 						<div class="options">
