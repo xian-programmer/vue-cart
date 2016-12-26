@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import {ROUTES} from './router'
+// import {ROUTES} from './router'
 import App from './App.vue'
 
 
@@ -33,7 +33,7 @@ var router = new VueRouter({
 //   router
 // })
 new Vue({
-  el: '#app',
-  router: router,
+  
+  router,
   render: h => h(App)
-})
+}).$mount('#root')
