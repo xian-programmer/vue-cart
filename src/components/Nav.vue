@@ -6,16 +6,19 @@
 <template>
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
-			<div class="navbar-header"><a href="#" class="navbar-brand" v-link="{path:'/'}">购物车</a></div>
+			<div class="navbar-header">
+				<router-link to="/" class="navbar-brand">购物车</router-link>
+			</div>
 			<div class="collapse navbar-collapse">
+
 				<ul class="nav navbar-nav">
-					<li v-link="{ path: '/index', activeClass: 'active' }">
-						<a href="#!">iphone 6s</a>
+
+					<li >
+						<router-link to="/index">iphone 6s</router-link>
 					</li>
-					<li v-link="{ path: '/cart', activeClass: 'active' }">
-						<a href="#!">
-							购物车<span class="badge text-danger"></span>
-						</a>
+					<li >
+						<router-link to="/cart">购物车<span class="badge text-danger"></span></router-link>
+						
 					</li>
 				</ul>
 			</div>

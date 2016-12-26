@@ -17,9 +17,9 @@ var router = new VueRouter({
 	routes
 })
 // ConfigRouter(router)
-// router.beforeEach(function() {
-//   window.scrollTo(0, 0)
-// })
+router.beforeEach(function() {
+  window.scrollTo(0, 0)
+})
 
 // If no route is matched redirect home
 // router.redirect({
@@ -33,6 +33,7 @@ var router = new VueRouter({
 //   router
 // })
 new Vue({
-  router,
+  el: '#app',
+  router: router,
   render: h => h(App)
-}).$mount('#app')
+})
