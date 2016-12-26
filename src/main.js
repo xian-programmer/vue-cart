@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import {ROUTES} from './router'
+import {ROUTES} from './router'
 import App from './App.vue'
 
 
@@ -17,9 +17,9 @@ var router = new VueRouter({
 	routes
 })
 // ConfigRouter(router)
-router.beforeEach(function() {
-  window.scrollTo(0, 0)
-})
+// router.beforeEach(function() {
+//   window.scrollTo(0, 0)
+// })
 
 // If no route is matched redirect home
 // router.redirect({
