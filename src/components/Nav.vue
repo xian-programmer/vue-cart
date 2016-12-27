@@ -27,7 +27,7 @@
 						<router-link to="/index">iphone 6s</router-link>
 					</li>
 					<li >
-						<router-link to="/cart">购物车<span class="badge text-danger"></span></router-link>
+						<router-link to="/cart">购物车<span class="badge text-danger" v-text="totalItem" v-if="totalItem"></span></router-link>
 						
 					</li>
 				</ul>
