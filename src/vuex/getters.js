@@ -1,2 +1,2 @@
-export const getVal = state => state.iPhone6S
+export const getState = state => state.iPhone6S
 

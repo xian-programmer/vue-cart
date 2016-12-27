@@ -1,6 +1,6 @@
 <script>
 	import { changePrice, changeStyle, addItem } from '../vuex/actions';
-	import { getVal } from '../vuex/getters.js';
+	// import { getVal } from '../vuex/getters.js';
 
 	export default{
 		name:'Index',
@@ -40,8 +40,7 @@
 					</div>
 					<div class="detail col-md-6 col-sm-6">
 						<h3 class="name">
-							{{test}}
-							<!-- <span v-text="iPhone6S"></span> -->
+							<span v-text="iPhone6S.name"></span>
 							
 						</h3>
 						<hr>
@@ -72,9 +71,9 @@
 							</dl>
 						</div>
 						 <hr>
-			            <!-- <button class="btn btn-danger btn-block" @click="addItem()" :disabled="iPhone6S.isSelected">
+			            <button class="btn btn-danger btn-block" @click="addItem()" :disabled="iPhone6S.isSelected">
 			              <span class="glyphicon glyphicon-shopping-cart"></span> 加入购物车
-			            </button> -->
+			            </button>
 					</div>
 				</div>
 			</div>
